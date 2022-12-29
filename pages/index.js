@@ -3,8 +3,12 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Banner from '../components/banner'
 
-
 export default function Home() {
+
+  const handleOnBannerBtnClick = () => {
+    console.log('hello');
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +19,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Coffeeee Connoisseur</h1>
-        <Banner/>
+        <Banner 
+          buttonText="View stores nearby"
+          handleOnClick={handleOnBannerBtnClick}
+          // bannerText="Coffeeee Connoisseur customized"
+          />
       </main>
 
     </div>
