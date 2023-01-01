@@ -18,11 +18,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Coffeeee Connoisseur</h1>
+        {/* <h1 className={styles.title}>Coffeeee Connoisseur</h1> */}
         <Banner 
           buttonText="View stores nearby"
           handleOnClick={handleOnBannerBtnClick}
-          // bannerText="Coffeeee Connoisseur customized"
+          bannerText="Discover your local coffee shop!"
           />
       </main>
 
