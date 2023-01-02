@@ -10,10 +10,11 @@ const CoffeeStore = () => {
             <Link href="/"> 
                 Back to home
             </Link>
+            <Link href="/coffee-stores/dynamic"> 
+                Go to dynamic page
+            </Link>
         </div>
-
     );
-    
 };
 
 export default CoffeeStore;

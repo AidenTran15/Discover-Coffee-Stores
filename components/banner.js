@@ -6,11 +6,13 @@ const Banner = ({buttonText, handleOnClick, bannerText}) => {
             <span className={styles.title1}>Coffee</span> 
             <span className={styles.title2}>Connoisseur</span></h1>
         <p className={styles.subtitle}>{bannerText ?? "Default"}</p>
-        <button 
-            className={styles.button}  
-            onClick={handleOnClick}>
-                {buttonText}
-        </button>
+        <div className={styles.buttonWrapper}>
+            <button 
+                className={styles.button}  
+                onClick={handleOnClick}>
+                    {buttonText}
+            </button>
+        </div>
     </div>
     ); 
 };
