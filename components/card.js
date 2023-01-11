@@ -11,10 +11,11 @@ const Card = (props) => {
                     <div className={styles.cardHeaderWrapper}>
                         <h2 className={styles.cardHeader}>{props.name}</h2>
                     </div>
-                </div>
-                <div className={styles.cardHeaderWrapper}>
+                    <div className={styles.cardHeaderWrapper}>
                     <Image className={styles.cardImage} src={props.imgUrl} width={260} height={160}/>
+                    </div>
                 </div>
+
             </a>
         </Link>
     )
